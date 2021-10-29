@@ -1,0 +1,49 @@
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-family: $fontTitles;
+    font-size: 4rem;
+  }
+
+  &__subtitle {
+    font-family: $fontTitles;
+    font-size: 2.6rem;
+    font-weight: 300;
+  }
+
+  &__image {
+    animation: hero 1.5s ease-in-out 0s 1 normal none;
+  }
+}
+
+@keyframes hero {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    &__title {
+      font-size: 6rem;
+      font-weight: 500;
+    }
+
+    &__subtitle {
+      font-size: 4rem;
+    }
+
+    &__image {
+      width: 50%;
+    }
+  }
+}

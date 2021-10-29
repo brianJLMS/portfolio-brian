@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #a23eff;
+  background-color: map-get($map: $palette, $key: "second-color");
   transform: translateY(-210px);
   transition: transform 0.5s ease-in-out;
   width: 100%;
@@ -42,7 +42,7 @@
     }
     &__link:hover {
       color: #000;
-      background-color: #fff347;
+      background-color: map-get($map: $palette, $key: "compl-color");
     }
   }
 }
