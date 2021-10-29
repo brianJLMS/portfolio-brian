@@ -1,4 +1,107 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
-  background-color: red;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.hamburger-container {
+  text-align: center;
+  width: 100%;
+  background-color: #8e1bfa;
+  position: relative;
+  z-index: 20;
+}
+
+.hdr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a23eff;
+  -webkit-transform: translateY(-210px);
+          transform: translateY(-210px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  width: 100%;
+  z-index: 10;
+}
+
+.hdr.is-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.hdr .ulist {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.hdr .ulist__item {
+  display: inline-block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.hdr .ulist__link {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hdr .ulist__link:hover {
+  color: #000;
+  background-color: #fff347;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-container {
+    display: none;
+  }
+  .hdr {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .hdr__navigation {
+    width: 100%;
+  }
+  .hdr .ulist {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
