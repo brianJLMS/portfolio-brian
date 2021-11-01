@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Portfolio|Brian</title>
-
+    <title>Pagina Portfolio | Brian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
@@ -44,7 +50,7 @@
             <a class="ulist__link" href="#">Presentation</a>
           </li>
           <li class="ulist__item">
-            <a class="ulist__link" href="#">Knowledge</a>
+            <a class="ulist__link" href="#knowledge">Knowledge</a>
           </li>
           <li class="ulist__item">
             <a class="ulist__link" href="#">Portfolio</a>
@@ -61,6 +67,56 @@
           <h1 class="hero__title">Junior Front-end Developer</h1>
           <img class="hero__image" src="utils/img/Hero.svg" alt="Hero image" />
           <h3 class="hero__subtitle">Hi, I'm Brian. Nice to meet you.</h3>
+        </article>
+        <article id="knowledge" class="knowledge">
+          <div class="knowledge__title-cont">
+            <h4 class="knowledge__title">Languages I speak:</h4>
+          </div>
+          <section class="lang">
+            <div class="lang__container">
+              <i class="lang__icon lang--html fab fa-html5"></i>
+            </div>
+            <div class="lang__container">
+              <i class="lang__icon lang--css fab fa-css3-alt"></i>
+            </div>
+            <div class="lang__container">
+              <i class="lang__icon fab lang--sass fa-sass"></i>
+            </div>
+            <div class="lang__container">
+              <i class="lang__icon lang--javascript fab fa-js-square"></i>
+            </div>
+            <div class="lang__container">
+              <i class="lang__icon lang--react fab fa-react"></i>
+            </div>
+          </section>
+          <div class="knowledge__cont-image">
+            <img
+              class="knowledge__image"
+              src="utils/img/knowledge.svg"
+              alt="Knowledge image"
+            />
+            <button class="btn btn--download">Download CV</button>
+          </div>
+        </article>
+        <article class="portfolio">
+          <h4>Portfolio Front-end</h4>
+          <div class="cards">
+            <div class="cards__card">
+              <img class="porfolio__image" src="utils/img/example.png" alt="" />
+              <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="cards__card-desc">html, sass, javascript</p>
+            </div>
+            <div class="cards__card">
+              <img src="utils/img/example.png" class="porfolio__image" alt="" />
+              <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="cards__card-desc">html, sass, javascript</p>
+            </div>
+            <div class="cards__card">
+              <img src="utils/img/example.png" class="porfolio__image" alt="" />
+              <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="cards__card-desc">html, sass, javascript</p>
+            </div>
+          </div>
         </article>
       </main>
     </div>

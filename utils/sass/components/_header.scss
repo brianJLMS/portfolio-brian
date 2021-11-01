@@ -36,7 +36,7 @@
       display: inline-block;
       padding: 1rem;
       width: 100%;
-      color: #fff;
+      color: map-get($map: $palette, $key: "light");
       text-decoration: none;
       transition: 0.3s ease-in-out;
     }

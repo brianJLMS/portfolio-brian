@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -12,6 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden !important;
 }
 
 img {
@@ -36,4 +38,5 @@ img {
 @import "abstracts/variables";
 
 //Imports - components
-@import "components/header", "components/hero";
+@import "components/header", "components/hero", "components/knowledge",
+  "components/buttons";
