@@ -4,4 +4,28 @@
   border: none;
   border-radius: 15px;
   cursor: pointer;
+
+  &--download {
+    font-weight: 700;
+    align-items: center;
+    background-color: map-get($map: $palette, $key: "compl-color");
+    transition: background-color 0.5s ease-in-out;
+    &:hover {
+      background-color: darken($color: #a3a186, $amount: 5);
+    }
+  }
+
+  &--card {
+    display: block;
+    width: 100px;
+    margin: 0.5rem;
+    background-color: map-get($map: $palette, $key: "compl-color");
+    transition: background-color 0.5s ease-in-out;
+    &:hover {
+      background-color: darken($color: #a3a186, $amount: 5);
+    }
+  }
+  &--card:first-of-type {
+    font-size: 3rem;
+  }
 }

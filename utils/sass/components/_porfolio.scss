@@ -1,0 +1,58 @@
+.portfolio {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10rem;
+
+  &__title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 300;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__card {
+      width: 240px;
+      background-color: map-get($map: $palette, $key: "second-color");
+      height: auto;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 1.5rem;
+      -webkit-box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.31);
+      box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.31);
+    }
+
+    &__card-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    &__card-desc {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    &__card-links {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1rem;
+    }
+
+    &__card-link {
+      text-decoration: none;
+      color: map-get($map: $palette, $key: "first-color");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    .cards {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}

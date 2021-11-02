@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Portfolio | Brian</title>
+    <title>Portfolio | Brian Medina</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -53,7 +53,7 @@
             <a class="ulist__link" href="#knowledge">Knowledge</a>
           </li>
           <li class="ulist__item">
-            <a class="ulist__link" href="#">Portfolio</a>
+            <a class="ulist__link" href="#portfolio">Portfolio</a>
           </li>
           <li class="ulist__item">
             <a class="ulist__link" href="#">Contact</a>
@@ -99,23 +99,116 @@
           </div>
         </article>
         <article class="portfolio">
-          <h4>Portfolio Front-end</h4>
+          <h4 id="portfolio" class="portfolio__title">
+            My Portfolio Front-end:
+          </h4>
           <div class="cards">
             <div class="cards__card">
               <img class="porfolio__image" src="utils/img/example.png" alt="" />
               <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
               <p class="cards__card-desc">html, sass, javascript</p>
+
+              <div class="cards__card-links">
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </button>
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#">Visit Website</a>
+                </button>
+              </div>
             </div>
             <div class="cards__card">
               <img src="utils/img/example.png" class="porfolio__image" alt="" />
               <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
               <p class="cards__card-desc">html, sass, javascript</p>
+              <div class="cards__card-links">
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </button>
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#">Visit Website</a>
+                </button>
+              </div>
             </div>
             <div class="cards__card">
               <img src="utils/img/example.png" class="porfolio__image" alt="" />
               <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
               <p class="cards__card-desc">html, sass, javascript</p>
+              <div class="cards__card-links">
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </button>
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#">Visit Website</a>
+                </button>
+              </div>
             </div>
+            <div class="cards__card">
+              <img src="utils/img/example.png" class="porfolio__image" alt="" />
+              <p class="cards__card-title">Lorem ipsum dolor sit amet.</p>
+              <p class="cards__card-desc">html, sass, javascript</p>
+              <div class="cards__card-links">
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </button>
+                <button class="btn btn--card">
+                  <a class="cards__card-link" href="#">Visit Website</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div style="height: 150px; overflow: hidden">
+          <svg
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+            style="height: 100%; width: 100%"
+          >
+            <path
+              d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: #a23eff"
+            ></path>
+          </svg>
+        </div>
+        <article class="contact">
+          <form class="contact__form">
+            <h4>Contact</h4>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="contact__input"
+            />
+            <input
+              type="text"
+              name="consultation"
+              id="consultation"
+              placeholder="Consultation"
+              class="contact__input"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              class="contact__textarea"
+            ></textarea>
+            <input type="submit" name="submit" id="submit" value="Send" />
+          </form>
+          <div class="contact__cont-image">
+            <img
+              src="utils/img/contact.svg"
+              alt="contact image"
+              class="contact__image"
+            />
           </div>
         </article>
       </main>
