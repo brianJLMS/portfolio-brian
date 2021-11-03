@@ -47,7 +47,7 @@
       <nav class="hdr__navigation">
         <ul class="ulist">
           <li class="ulist__item">
-            <a class="ulist__link" href="#">Presentation</a>
+            <a class="ulist__link" href="#presentation">Presentation</a>
           </li>
           <li class="ulist__item">
             <a class="ulist__link" href="#knowledge">Knowledge</a>
@@ -56,14 +56,14 @@
             <a class="ulist__link" href="#portfolio">Portfolio</a>
           </li>
           <li class="ulist__item">
-            <a class="ulist__link" href="#">Contact</a>
+            <a class="ulist__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <div class="content is-active">
       <main class="mn">
-        <article class="hero">
+        <article class="hero" id="presentation">
           <h1 class="hero__title">Junior Front-end Developer</h1>
           <img class="hero__image" src="utils/img/Hero.svg" alt="Hero image" />
           <h3 class="hero__subtitle">Hi, I'm Brian. Nice to meet you.</h3>
@@ -178,30 +178,53 @@
             ></path>
           </svg>
         </div>
-        <article class="contact">
-          <form class="contact__form">
-            <h4>Contact</h4>
+        <article class="contact" id="contact">
+          <form
+            class="contact__form"
+            target="_blank"
+            action="https://formsubmit.co/brianmedinasuafez@gmail.com"
+            method="POST"
+          >
+            <h4 class="contact__title">Contact</h4>
             <input
               type="email"
               name="email"
-              id="email"
+              pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+              required
+              title="This Email is incorrect."
               placeholder="E-mail"
               class="contact__input"
             />
+
             <input
               type="text"
               name="consultation"
-              id="consultation"
+              required
+              title="the subject is required."
               placeholder="Consultation"
               class="contact__input"
             />
             <textarea
               name="message"
-              id="message"
+              data-pattern="^.{1,255}$"
+              required
               placeholder="Message"
+              title="Your Message must not exceed 255 characters."
               class="contact__textarea"
             ></textarea>
-            <input type="submit" name="submit" id="submit" value="Send" />
+            <input
+              type="submit"
+              name="submit"
+              id="submit"
+              value="Send"
+              class="btn btn--form"
+            />
+            <div class="contact__form-loader none">
+              <img src="utils/img/rings.svg" alt="Loader" />
+            </div>
+            <div class="contact__form-response none">
+              <p>The data has been sent.</p>
+            </div>
           </form>
           <div class="contact__cont-image">
             <img
@@ -212,6 +235,17 @@
           </div>
         </article>
       </main>
+      <footer class="footer">
+        <p class="footer__text">
+          Portfolio | Brian Medina - Made with passion.
+        </p>
+        <div class="footer__links">
+          <a href="#" class="footer__link"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="#" class="footer__link"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </footer>
     </div>
     <script src="js/main.js" type="module"></script>
   </body>

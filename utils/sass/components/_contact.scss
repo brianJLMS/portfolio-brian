@@ -1,0 +1,79 @@
+.contact {
+  background-color: map-get($map: $palette, $key: "second-color");
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__form {
+    background-color: map-get($map: $palette, $key: "compl-color");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 1rem;
+    -webkit-box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.31);
+    box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.31);
+    border-radius: 15px;
+  }
+
+  &__input {
+    background-color: map-get($map: $palette, $key: "light");
+    width: 100%;
+    height: 4rem;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  &__form-error {
+    display: none;
+  }
+
+  &__form-error.is-active {
+    display: block;
+    background-color: map-get($map: $palette, $key: "danger");
+    color: map-get($map: $palette, $key: "light");
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  &__form-loader.none {
+    display: none;
+  }
+
+  &__form-response {
+    background-color: #41e400;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  &__form-response.none {
+    display: none;
+  }
+
+  &__textarea {
+    background-color: map-get($map: $palette, $key: "light");
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 8rem;
+    border: none;
+    resize: none;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

@@ -28,4 +28,13 @@
   &--card:first-of-type {
     font-size: 3rem;
   }
+
+  &--form {
+    background-color: map-get($map: $palette, $key: "first-color");
+    color: map-get($map: $palette, $key: "light");
+    transition: background-color 0.5s ease-in-out;
+    &:hover {
+      background-color: darken($color: #6000b9, $amount: 5);
+    }
+  }
 }
