@@ -19,6 +19,20 @@
     font-size: 5rem;
     color: #000;
   }
+
+  &__final-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__final-link:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  &__final-link--git {
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -33,6 +33,10 @@
     font-size: 3rem;
   }
 
+  &--cardFull {
+    font-size: 1.6rem !important;
+  }
+
   &--form {
     background-color: map-get($map: $palette, $key: "first-color");
     color: map-get($map: $palette, $key: "light");
