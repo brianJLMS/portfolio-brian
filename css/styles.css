@@ -319,6 +319,10 @@ img {
   background-color: #fff347;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .btn--card:hover {

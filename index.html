@@ -34,9 +34,11 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+  <body style="background-color: aliceblue;">
     <div class="hamburger-container">
       <button
         id="hamburger"
@@ -69,13 +71,13 @@
     <div class="content is-active">
       <main class="mn">
         <article class="hero" id="presentation">
-          <h1 class="hero__title">Junior Fullstack Developer</h1>
+          <h1 class="hero__title">Fullstack Developer</h1>
           <img class="hero__image" src="utils/img/Hero.svg" alt="Hero image" />
-          <h3 class="hero__subtitle">Hi, I'm Brian. Nice to meet you.</h3>
+          <h3 class="hero__subtitle">Hola, soy Brian. Nice to meet you!</h3>
         </article>
         <article id="knowledge" class="knowledge">
           <div class="knowledge__title-cont">
-            <h4 class="knowledge__title">Languages I speak:</h4>
+            <h4 style="font-size: 25px;" class="knowledge__title">Languages I speak:</h4>
           </div>
           <section class="lang">
             <div class="lang__container">
@@ -91,10 +93,10 @@
               <i class="lang__icon lang--javascript fab fa-js-square"></i>
             </div>
             <div class="lang__container">
-              <i class="lang__icon lang--react fab fa-react"></i>
+              <i style="color: green;" class="lang__icon fa-brands fa-vuejs"></i>
             </div>
             <div class="lang__container">
-              <img src="https://img.icons8.com/color/48/000000/redux.png" />
+              <img src="https://img.icons8.com/color/48/000000/graphql.png" />
             </div>
             <div class="lang__container">
               <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
@@ -105,11 +107,6 @@
             <div class="lang__container">
               <img src="https://img.icons8.com/ios/50/000000/mysql-logo.png" />
             </div>
-            <div class="lang__container">
-              <img
-                src="https://img.icons8.com/color/50/000000/material-ui.png"
-              />
-            </div>
           </section>
           <div class="knowledge__cont-image">
             <img
@@ -118,7 +115,8 @@
               alt="Knowledge image"
             />
             <a
-              href="utils/download/Brian Suarez CV .pdf"
+              style="font-size: 16px;"
+              href="utils/download/briancvnuevo.pdf"
               download="Curriculum-Brian-Medina"
               class="btn btn--download"
               >Download CV</a
@@ -127,127 +125,62 @@
         </article>
         <article class="portfolio">
           <h4 id="portfolio" class="portfolio__title">
-            My Portfolio Fullstack:
+            Projects I did:
           </h4>
           <div class="cards">
             <div class="cards__card">
               <img
-                src="utils/img/pokedex.png"
+                src="utils/img/analytics1.png"
                 class="porfolio__image"
                 alt="Pokedex Image"
               />
-              <p class="cards__card-title">Pokedex WEB</p>
-              <p class="cards__card-desc">
-                Html, Css, Javascript, AJAX and REST API
-              </p>
+              <p class="cards__card-title">Reports and Analytics</p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
               <div class="cards__card-links">
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://github.com/brianJLMS/pokedex-project"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </button>
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://brianjlms.github.io/pokedex-project/"
-                    >Visit Website</a
-                  >
+                <button data-bs-toggle="modal" data-bs-target="#reportModal" class="btn btn--card">
+                  <a style="font-size: medium;" class="cards__card-link">See Project</a>
                 </button>
               </div>
             </div>
             <div class="cards__card">
-              <img class="porfolio__image" src="utils/img/tienda.png" alt="" />
-              <p class="cards__card-title">E-commerce Simulator</p>
-              <p class="cards__card-desc">Javascript, React and Css</p>
-
+              <img class="porfolio__image" src="utils/img/smartinterviews1.png" alt="" />
+              <p class="cards__card-title">Smart Interviews</p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
               <div class="cards__card-links">
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://github.com/brianJLMS/proyecto-tienda"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </button>
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://amazing-bell-1066b1.netlify.app/#/"
-                    >Visit Website</a
-                  >
+                <button data-bs-toggle="modal" data-bs-target="#smartModal" class="btn btn--card">
+                  <a style="font-size: medium;" class="cards__card-link">See Project</a>
                 </button>
               </div>
             </div>
 
             <div class="cards__card">
               <img
-                src="utils/img/fullstack-mysql.png"
+                src="utils/img/case1.png"
                 class="porfolio__image"
                 alt="User-management image"
               />
-              <p class="cards__card-title">Fullstack|User-management</p>
-              <p class="cards__card-desc">Html, Sass, Express,NodeJS,MySql</p>
+              <p class="cards__card-title">Case Management</p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
               <div class="cards__card-links">
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://github.com/brianJLMS/user-management"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </button>
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://usermanagement-project.netlify.app/"
-                    >Visit Website</a
-                  >
+                <button data-bs-toggle="modal" data-bs-target="#caseModal" class="btn btn--card">
+                  <a style="font-size: medium;" class="cards__card-link">See Project</a>
                 </button>
               </div>
             </div>
 
             <div class="cards__card">
               <img
-                src="utils/img/fullstack.png"
+                src="utils/img/Management.jpg"
                 class="porfolio__image"
                 alt="Fullstack Travel Experiencess image"
               />
               <p class="cards__card-title">
-                Fullstack APP | Travel Experiencess
+                Front Project Manager
               </p>
-              <p class="cards__card-desc">
-                React, Redux, MaterialUI, NodeJS, MongoDB
-              </p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
               <div class="cards__card-links">
-                <button id="btn-card--font" class="btn btn--card btn--cardFull">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://github.com/brianJLMS/experiencias-front"
-                    ><i class="fab fa-github"></i> Front</a
-                  >
-                </button>
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://github.com/brianJLMS/experiencias-sever"
-                    ><i class="fab fa-github"></i> Server</a
-                  >
-                </button>
-                <button class="btn btn--card">
-                  <a
-                    target="_blank"
-                    class="cards__card-link"
-                    href="https://experiencias-proyecto.netlify.app/"
-                    >Visit Website</a
-                  >
+                <button data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn--card">
+                  <a style="font-size: medium;" class="cards__card-link">See Project</a>
                 </button>
               </div>
             </div>
@@ -355,6 +288,241 @@
           >
         </div>
       </footer>
+    </div>
+    <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div style="width: 1000px !important; max-width: 1000px !important;" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="exampleModalLabel">Reports and Analytics</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./utils/img/analytics1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/analytics2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/analytics3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/analytics4.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <section>
+              <p>
+                Consiste en una sección de la aplicación que sirve para ver cantidades y promedios de casos abiertos en una firma de abogados de acuerdo a diversas variables, enlistados en tablas y tambien como graficos de barras.
+              </p>
+              <p>
+                <h4>
+                  Tecnologias utilizadas:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3, Composition API - como estático integrado en Laravel 5</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                </ul>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="smartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div style="width: 1000px !important; max-width: 1000px !important;" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="exampleModalLabel">Smart Interviews</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselSmart" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./utils/img/smartinterviews1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/smartinterviews2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/smartinterviews3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/smartinterviews4.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmart" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselSmart" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <section>
+              <p>
+                Es una tabla que te permite a los abogados visualizar, generar y enviar entrevistas a clientes para rellenar formularios requeridos para casos. Esto funciona en conjunto con una plataforma desarrollada en Docassemble(Un sistema gratuito y de código abierto para entrevistas guiadas y compilación de documentos, basado en Python, YAML y Markdown.)
+              </p>
+              <p>
+                <h4>
+                  Tecnologias utilizadas:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue2 - integrado en Laravel 5</li>
+                  <li>Node JS - GraphQL</li>
+                </ul>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="caseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div style="width: 1000px !important; max-width: 1000px !important;" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="exampleModalLabel">Case Management Board</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselCase" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./utils/img/case1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case7.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case8.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case9.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./utils/img/case10.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCase" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCase" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <section>
+              <p>
+                Es una herramienta de visualización, manejo y gestion de Casos para una firma de abogados. Tiene diversas opciones personalizadas para el manejo de casos que viene a remplazar la anterior tabla que se tenia en Laravel 5 la cual se limitaba a unos cuantos filtros y una descarga. Algunas de las funcionalidades son:
+                <ul style="list-style: none;">
+                  <li>- Creación y asignación de Tags</li>
+                  <li>- Creación y asignación de Status y Meta Status personalizados</li>
+                  <li>- Asignación de prioridades</li>
+                  <li>- Creacion de Tabs(vistas) por usuario</li>
+                  <li>- Vista de Tabla y vista de Columns(cards)</li>
+                  <li>- Customizar tanto el orden de las columnas como la seleccion de columnas visibles por vista</li>
+                  <li>- La posibilidad de agrupar y filtrar(colocar más de un filtro)</li>
+                </ul>
+                Es una herramienta que esta basada en la plataforma de organización <a target="_blank" href="https://startinfinity.com/">"Infinity"</a>
+              </p>
+              <p>
+                <h4>
+                  Tecnologias utilizadas:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3 - integrado como estático en Laravel 5</li>
+                  <li>Ant Design Vue - Libreria de VueJS</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+      <div style="width: 1000px !important; max-width: 1000px !important;" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="exampleModalLabel">Front Project Manager</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./utils/img/Management.jpg" alt="Management">
+            <section>
+              <p>
+                La plataforma <a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a> estuvo durante muchos años construida en PHP en una versión antigua de Laravel(la version 5) lo cual ponía muchas limitantes a la hora de hacer crecer la aplicación y hacerla cada vez más robusta y con un desarrollo horizontal. También al haber pasado por muchas manos y no haberse procurado buenas practicas y estructura, provocó que los problemas fueran cada vez más dificiles de mitigar y controlar. Por todas estas razones se decidió hacer una migración total del Front de Laravel a VueJS(Vue3), proyecto del cual quede a cargo de un grupo de 5 developers para sacarlo adelante.
+                <p>
+                  Para esto se establecieron objetivos y lineamientos importantes:
+                  <ul style="list-style: none;">
+                    <li>- El nuevo Front tiene que tener una navegación fluída y reactiva entre cada una de sus secciones, evitar recargas de pagina.</li>
+                    <li>- La utilización de <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>,librería de Vue que te permite compartir estado entre componentes. Esto para asegurarse de que siempre que se navegue entre componentes no se esten trayendo datos innecesariamente, ahorrando uso de memoria(uno de los problemas principales que se tenia).</li>
+                    <li>- Procurar una buena estructura y conexión entre componentes del proyecto.</li>
+                    <li>- Reactividad entre usuarios. Para esto se implemento una estructura de websockets que permite la comunicación entre sesiones.</li>
+                  </ul>
+                </p>
+                <p>
+                  El seguimiento se hizo utilizando una metodología muy parecida a la de SCRUM o Ágil, estableciendo Sprints, una segmentación de tareas, los tiempos de cada tarea y quienes se dedicarían a cumplirlo. Reuniones diarias de entre 10 a 30 minutos con el equipo de front para ver los avances, los problemas, las posibles soluciones y cualquier otro tipo de novedad que se presente. Esos avances a su vez los presentaba en la reunion diaria general de todo el equipo de devs.
+                </p>
+                <p>
+                  Las herramientas que se utilizaron para esto fueron:
+                  <ul style="list-style: none;">
+                    <li>- Spreadsheets(con Google Sheets), con varias vistas que identificaban cada sección de la aplicación a migrar a Vue. Un spreadsheet para el desarrollo, otro para las pruebas en staging y otro para pruebas finales y afinamiento en producción</li>
+                    <li>- <a target="_blank" href="https://startinfinity.com/">Infinity</a>, para el seguimiento mas general de las tareas. También para una visualización más sencilla para el Project Manager de todos los devs y el Jefe de la aplicación.</li>
+                    <li>- <a target="_blank" href="https://www.notion.so/es-es">Notion</a>, herramienta que se utiliza en el equipo para la organización de la documentación del desarrollo de la aplicación</li>
+                  </ul>
+                </p>
+              </p>
+              <p>
+                <h4 style="font-weight: 700;">
+                  Tecnologias utilizadas:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3 - integrado como estático en Laravel 5</li>
+                  <li>Sass</li>
+                  <li>Ant Design Vue - Libreria de VueJS</li>
+                  <li>Pinia - Libreria de VueJS para la gestion de estados en la aplicación</li>
+                  <li>Bootstrap</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/main.js" type="module"></script>
   </body>
