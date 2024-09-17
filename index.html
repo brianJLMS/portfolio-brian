@@ -327,7 +327,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <section>
+            <!-- <section>
               <p>
                 Consiste en una sección de la aplicación que sirve para ver cantidades y promedios de casos abiertos en una firma de abogados de acuerdo a diversas variables, enlistados en tablas y tambien como graficos de barras.
               </p>
@@ -337,6 +337,22 @@
                 </h4>
                 <ul>
                   <li>VueJS - Vue3, Composition API - como estático integrado en Laravel 5</li>
+                  <li>Typescript</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                </ul>
+              </p>
+            </section> -->
+            <section>
+              <p>
+                It consists of a section of the application that is used to view quantities and averages of open cases in a law firm based on various variables, listed in tables and also as bar charts.
+              </p>
+              <p>
+                <h4>
+                  Technologies used:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3, Composition API - statically integrated into Laravel 5</li>
                   <li>Typescript</li>
                   <li>Node JS - GraphQL</li>
                   <li>MySQL</li>
@@ -379,7 +395,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <section>
+            <!-- <section>
               <p>
                 Es una tabla que te permite a los abogados visualizar, generar y enviar entrevistas a clientes para rellenar formularios requeridos para casos. Esto funciona en conjunto con una plataforma desarrollada en Docassemble(Un sistema gratuito y de código abierto para entrevistas guiadas y compilación de documentos, basado en Python, YAML y Markdown.)
               </p>
@@ -389,6 +405,20 @@
                 </h4>
                 <ul>
                   <li>VueJS - Vue2 - integrado en Laravel 5</li>
+                  <li>Node JS - GraphQL</li>
+                </ul>
+              </p>
+            </section> -->
+            <section>
+              <p>
+                It is a table that allows lawyers to view, generate, and send interviews to clients in order to fill out forms required for cases. This works in conjunction with a platform developed in Docassemble (a free, open-source system for guided interviews and document assembly, based on Python, YAML, and Markdown).
+              </p>
+              <p>
+                <h4>
+                  Technologies used:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue2 - integrated into Laravel 5</li>
                   <li>Node JS - GraphQL</li>
                 </ul>
               </p>
@@ -447,7 +477,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <section>
+            <!-- <section>
               <p>
                 Es una herramienta de visualización, manejo y gestion de Casos para una firma de abogados. Tiene diversas opciones personalizadas para el manejo de casos que viene a remplazar la anterior tabla que se tenia en Laravel 5 la cual se limitaba a unos cuantos filtros y una descarga. Algunas de las funcionalidades son:
                 <ul style="list-style: none;">
@@ -474,6 +504,34 @@
                   <li>MongoDB</li>
                 </ul>
               </p>
+            </section> -->
+            <section>
+              <p>
+                It is a case management and visualization tool for a law firm. It has several customized options for managing cases, replacing the previous table in Laravel 5, which was limited to just a few filters and a download option. Some of its functionalities are:
+                <ul style="list-style: none;">
+                  <li>- Creation and assignment of Tags</li>
+                  <li>- Creation and assignment of custom Statuses and Meta Statuses</li>
+                  <li>- Assignment of priorities</li>
+                  <li>- Creation of Tabs (views) per user</li>
+                  <li>- Table view and Column (cards) view</li>
+                  <li>- Customize both the column order and the selection of visible columns per view</li>
+                  <li>- The ability to group and filter (apply more than one filter)</li>
+                </ul>
+                It is a tool based on the <a target="_blank" href="https://startinfinity.com/">"Infinity"</a> organization platform.
+              </p>
+              <p>
+                <h4>
+                  Technologies used:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3 - integrated statically into Laravel 5</li>
+                  <li>Typescript</li>
+                  <li>Ant Design Vue - VueJS library</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </p>
             </section>
           </div>
         </div>
@@ -488,7 +546,7 @@
           </div>
           <div class="modal-body">
             <img src="./utils/img/Management.jpg" alt="Management">
-            <section>
+            <!-- <section>
               <p>
                 La plataforma <a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a> estuvo durante muchos años construida en PHP en una versión antigua de Laravel(la version 5) lo cual ponía muchas limitantes a la hora de hacer crecer la aplicación y hacerla cada vez más robusta y con un desarrollo horizontal. También al haber pasado por muchas manos y no haberse procurado buenas practicas y estructura, provocó que los problemas fueran cada vez más dificiles de mitigar y controlar. Por todas estas razones se decidió hacer una migración total del Front de Laravel a VueJS(Vue3), proyecto del cual quede a cargo de un grupo de 5 developers para sacarlo adelante.
                 <p>
@@ -528,7 +586,50 @@
                   <li>MongoDB</li>
                 </ul>
               </p>
+            </section> -->
+            <section>
+              <p>
+                The <a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a> platform was built for many years in PHP using an old version of Laravel (version 5), which created many limitations when trying to grow the application and make it more robust with horizontal development. Additionally, since it had passed through many hands without ensuring good practices and structure, the problems became increasingly difficult to mitigate and control. For all these reasons, it was decided to completely migrate the Front from Laravel to VueJS (Vue3), a project for which I was in charge of a team of 5 developers to move it forward.
+                <p>
+                  To achieve this, important goals and guidelines were established:
+                  <ul style="list-style: none;">
+                    <li>- The new Front should have smooth and reactive navigation between its sections, avoiding page reloads.</li>
+                    <li>- The use of <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>, a Vue library that allows you to share state between components. This ensures that when navigating between components, unnecessary data is not fetched, saving memory (one of the main issues we had).</li>
+                    <li>- Ensure good structure and connection between the project’s components.</li>
+                    <li>- User interactivity. For this, a WebSocket structure was implemented to allow communication between sessions.</li>
+                  </ul>
+                </p>
+                <p>
+                  The project was tracked using a methodology similar to SCRUM or Agile, establishing Sprints, segmenting tasks, defining timelines for each task, and determining who would be responsible for them. Daily meetings of 10 to 30 minutes were held with the front-end team to review progress, problems, possible solutions, and any other updates. These updates were then presented at the general daily meeting with the entire development team.
+                </p>
+                <p>
+                  The tools used for this were:
+                  <ul style="list-style: none;">
+                    <li>- Spreadsheets (using Google Sheets), with several views identifying each section of the application to migrate to Vue. One spreadsheet for development, another for testing in staging, and another for final testing and fine-tuning in production.</li>
+                    <li>- <a target="_blank" href="https://startinfinity.com/">Infinity</a>, for general task tracking and a simpler view for the Project Manager and the Head of the application.</li>
+                    <li>- <a target="_blank" href="https://www.notion.so/es-es">Notion</a>, a tool used by the team for organizing the application development documentation.</li>
+                  </ul>
+                </p>
+              </p>
+              <p>
+                <h4 style="font-weight: 700;">
+                  Technologies used:
+                </h4>
+                <ul>
+                  <li>VueJS - Vue3 - statically integrated into Laravel 5</li>
+                  <li>Sass</li>
+                  <li>Typescript</li>
+                  <li>Ant Design Vue - VueJS library</li>
+                  <li>Pinia - VueJS library for state management in the application</li>
+                  <li>Bootstrap</li>
+                  <li>Node JS - GraphQL</li>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                  <li>Docker</li>
+                </ul>
+              </p>
             </section>
+            
           </div>
         </div>
       </div>
