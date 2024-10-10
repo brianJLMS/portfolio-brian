@@ -71,7 +71,7 @@
     <div class="content is-active">
       <main class="mn">
         <article class="hero" id="presentation">
-          <h1 class="hero__title">Fullstack Developer</h1>
+          <h1 class="hero__title">Front End Developer</h1>
           <img class="hero__image" src="utils/img/Hero.svg" alt="Hero image" />
           <h3 class="hero__subtitle">Hola, soy Brian. Nice to meet you!</h3>
         </article>
@@ -87,7 +87,7 @@
               <i class="lang__icon lang--javascript fab fa-js-square"></i>
             </div>
             <div class="lang__container">
-              <i style="color: #232388;" class="lang__icon fa-brands fa-php"></i>
+              <i style="color: #232388;" class="lang__icon fa-brands fa-react"></i>
             </div>
             <div class="lang__container">
               <i style="color: orangered" class="lang__icon fa-brands fa-laravel"></i>
@@ -117,13 +117,13 @@
               src="utils/img/knowledge.svg"
               alt="Knowledge image"
             />
-            <a
+            <!-- <a
               style="font-size: 16px;"
               href="utils/download/CV-ENG-Brian.pdf"
               download="Curriculum-Brian-Medina"
               class="btn btn--download"
               >Download CV</a
-            >
+            > -->
           </div>
         </article>
         <article class="portfolio">
@@ -138,7 +138,7 @@
                 alt="Pokedex Image"
               />
               <p class="cards__card-title">Reports and Analytics</p>
-              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a></p>
               <div class="cards__card-links">
                 <button data-bs-toggle="modal" data-bs-target="#reportModal" class="btn btn--card">
                   <a style="font-size: medium;" class="cards__card-link">See Project</a>
@@ -148,7 +148,7 @@
             <div class="cards__card">
               <img class="porfolio__image" src="utils/img/smartinterviews1.png" alt="" />
               <p class="cards__card-title">Smart Interviews</p>
-              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a></p>
               <div class="cards__card-links">
                 <button data-bs-toggle="modal" data-bs-target="#smartModal" class="btn btn--card">
                   <a style="font-size: medium;" class="cards__card-link">See Project</a>
@@ -163,7 +163,7 @@
                 alt="User-management image"
               />
               <p class="cards__card-title">Case Management</p>
-              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a></p>
               <div class="cards__card-links">
                 <button data-bs-toggle="modal" data-bs-target="#caseModal" class="btn btn--card">
                   <a style="font-size: medium;" class="cards__card-link">See Project</a>
@@ -178,9 +178,9 @@
                 alt="Fullstack Travel Experiencess image"
               />
               <p class="cards__card-title">
-                Front Project Manager
+                Front Tech Lead
               </p>
-              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Aplicación Prima Law</a></p>
+              <p><a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a></p>
               <div class="cards__card-links">
                 <button data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn--card">
                   <a style="font-size: medium;" class="cards__card-link">See Project</a>
@@ -283,12 +283,12 @@
             href="https://icons8.com/icon/74402/mongodb"
             >Icons by Icons8
           </a>
-          <a
+          <!-- <a
             target="_blank"
             class="footer__final-link footer__final-link--git"
             href="https://github.com/brianJLMS/portfolio-brian"
             ><i class="fab fa-github"></i> Portfolio Code</a
-          >
+          > -->
         </div>
       </footer>
     </div>
@@ -513,52 +513,11 @@
       <div style="width: 1000px !important; max-width: 1000px !important;" class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 id="exampleModalLabel">Front Project Manager</h1>
+            <h1 id="exampleModalLabel">Front Tech Lead</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <img src="./utils/img/Management.jpg" alt="Management">
-            <!-- <section>
-              <p>
-                La plataforma <a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a> estuvo durante muchos años construida en PHP en una versión antigua de Laravel(la version 5) lo cual ponía muchas limitantes a la hora de hacer crecer la aplicación y hacerla cada vez más robusta y con un desarrollo horizontal. También al haber pasado por muchas manos y no haberse procurado buenas practicas y estructura, provocó que los problemas fueran cada vez más dificiles de mitigar y controlar. Por todas estas razones se decidió hacer una migración total del Front de Laravel a VueJS(Vue3), proyecto del cual quede a cargo de un grupo de 5 developers para sacarlo adelante.
-                <p>
-                  Para esto se establecieron objetivos y lineamientos importantes:
-                  <ul style="list-style: none;">
-                    <li>- El nuevo Front tiene que tener una navegación fluída y reactiva entre cada una de sus secciones, evitar recargas de pagina.</li>
-                    <li>- La utilización de <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>,librería de Vue que te permite compartir estado entre componentes. Esto para asegurarse de que siempre que se navegue entre componentes no se esten trayendo datos innecesariamente, ahorrando uso de memoria(uno de los problemas principales que se tenia).</li>
-                    <li>- Procurar una buena estructura y conexión entre componentes del proyecto.</li>
-                    <li>- Reactividad entre usuarios. Para esto se implemento una estructura de websockets que permite la comunicación entre sesiones.</li>
-                  </ul>
-                </p>
-                <p>
-                  El seguimiento se hizo utilizando una metodología muy parecida a la de SCRUM o Ágil, estableciendo Sprints, una segmentación de tareas, los tiempos de cada tarea y quienes se dedicarían a cumplirlo. Reuniones diarias de entre 10 a 30 minutos con el equipo de front para ver los avances, los problemas, las posibles soluciones y cualquier otro tipo de novedad que se presente. Esos avances a su vez los presentaba en la reunion diaria general de todo el equipo de devs.
-                </p>
-                <p>
-                  Las herramientas que se utilizaron para esto fueron:
-                  <ul style="list-style: none;">
-                    <li>- Spreadsheets(con Google Sheets), con varias vistas que identificaban cada sección de la aplicación a migrar a Vue. Un spreadsheet para el desarrollo, otro para las pruebas en staging y otro para pruebas finales y afinamiento en producción</li>
-                    <li>- <a target="_blank" href="https://startinfinity.com/">Infinity</a>, para el seguimiento mas general de las tareas. También para una visualización más sencilla para el Project Manager de todos los devs y el Jefe de la aplicación.</li>
-                    <li>- <a target="_blank" href="https://www.notion.so/es-es">Notion</a>, herramienta que se utiliza en el equipo para la organización de la documentación del desarrollo de la aplicación</li>
-                  </ul>
-                </p>
-              </p>
-              <p>
-                <h4 style="font-weight: 700;">
-                  Tecnologias utilizadas:
-                </h4>
-                <ul>
-                  <li>VueJS - Vue3 - integrado como estático en Laravel 5</li>
-                  <li>Sass</li>
-                  <li>Typescript</li>
-                  <li>Ant Design Vue - Libreria de VueJS</li>
-                  <li>Pinia - Libreria de VueJS para la gestion de estados en la aplicación</li>
-                  <li>Bootstrap</li>
-                  <li>Node JS - GraphQL</li>
-                  <li>MySQL</li>
-                  <li>MongoDB</li>
-                </ul>
-              </p>
-            </section> -->
             <section>
               <p>
                 The <a style="color: #a8a8f8;" target="_blank" href="https://prima.law/">Prima Law</a> platform was built for many years in PHP using an old version of Laravel (version 5), which created many limitations when trying to grow the application and make it more robust with horizontal development. Additionally, since it had passed through many hands without ensuring good practices and structure, the problems became increasingly difficult to mitigate and control. For all these reasons, it was decided to completely migrate the Front from Laravel to VueJS (Vue3), a project for which I was in charge of a team of 5 developers to move it forward.
